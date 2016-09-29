@@ -45,55 +45,95 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username"
-                android:id="@+id/textView2" />
+                android:text="Username : "
+                android:id="@+id/textView2"
+                />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/EdUsername"
-                android:layout_weight="0.55" />
+                android:hint="  Masukan Username Anda"
+                />
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.05">
+            android:layout_weight="0.27">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password"
-                android:id="@+id/textView3" />
+                android:text="Password : "
+                android:id="@+id/textView3"
+                />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:id="@+id/EdPassword"
-                android:layout_weight="0.34" />
+                android:hint=" Masukan Password Anda"
+                />
         </LinearLayout>
+
+
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.13">
+            android:layout_weight="0.53"
+            android:weightSum="1">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:id="@+id/BtnLogin" />
+                android:id="@+id/BtnLogin"
+                android:layout_weight="0.50" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Logout"
-                android:id="@+id/BtnLogout" />
+                android:text="Register"
+                android:id="@+id/BtnRegister"
+                android:layout_weight="0.53" />
         </LinearLayout>
 
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.72">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN WITH FACEBOOK"
+                android:id="@+id/BtnFb"
+                android:layout_gravity="center_horizontal"
+                android:background="#3b5998" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN WITH GMAIL"
+                android:id="@+id/BtnGmail"
+                android:background="#db4437" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN WITH TWITTER"
+                android:id="@+id/BtnTwitter"
+                android:layout_gravity="center_horizontal"
+                android:background="#00aced" />
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
